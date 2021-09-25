@@ -6,14 +6,14 @@ Entity Component is a design pattern that provides flexibility in software desig
 ----------
 
 * Create and remove entities:
-    ```
+    ```C#
     Edile.Registry registry = new Edile.Registry();
         
     var entity_1 = registry.CreateEntity();
     registry.RemoveEntity(entity_1);
     ```
 * Create, handle and remove components:
-    ```
+    ```C#
     ...
         public class HealthComponent : Edile.Component
         {
